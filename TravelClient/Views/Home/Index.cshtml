@@ -1,0 +1,16 @@
+<h1>All Reviews:</h1>
+@using TravelClient.Models;
+
+@model List<Review>
+<ol>
+@foreach (Review review in Model)
+{
+    <ul>
+        <li>City: @review.City</li>
+        <li>Description:  @review.Description</li>
+        <li>Rating:  @review.Rating</li>
+        <li>ReviewId:  @review.ReviewId</li>
+    </ul>
+    <br>
+}
+</ol> 
